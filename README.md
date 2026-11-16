@@ -1,20 +1,21 @@
 Naresh Render Dragon Shader
 
-A shader pack for Minecraft Bedrock (RenderDragon) by Naresh with soft clouds, a big moon with glow
-northern lights, cinematic tone mapping, world light with block shadows, water and block reflections
+A shader pack for Minecraft Bedrock (RenderDragon) by Naresh with soft clouds, a big moon with glow, northern lights, cinematic tone mapping, world light with block shadows, water and block reflections.
 
-This repository has its own layout and its own build tool ("naresh.py")
+This repository has its own layout and its own build tool ("naresh.py").
 
 What you need
 
 - Python 3.11 or newer
 - lazurite: "pip install -r requirements.txt"
-- shaderc, the shader compiler (download: https://github.com/veka0/bgfx-mcbe/releases/tag/binaries)
+- shaderc, the shader compiler
+  Download: https://github.com/veka0/bgfx-mcbe/releases/tag/binaries
 
-You do not need to find or download the material ".bin" files manually
-Just run the full build setup command and the required materials will be installed into the "vanilla/" folder automatically
+You do not need to find or download the material ".bin" files manually.
 
-On Termux copy shaderc to your home folder and run "chmod +x" on it
+Just run the full build setup command and the required materials will be installed into the "vanilla/" folder automatically.
+
+On Termux copy shaderc to your home folder and run "chmod +x" on it.
 
 Build
 
@@ -23,25 +24,25 @@ python naresh.py setup --shaderc path/to/shaderc --vanilla path/to/game/material
 python naresh.py check
 python naresh.py pack -p android
 
-"-p" can be "android", "ios", "windows" or "all"
-The pack is written to "build/"
+"-p" can be "android", "ios", "windows" or "all". The pack is written to "build/".
 
-"python naresh.py build" only compiles the materials
+"python naresh.py build" only compiles the materials.
 
 Subpacks
 
-The pack has three quality subpacks, set in "pack.toml"
+The pack has three quality subpacks, set in "pack.toml".
 
 Subpack| What it does
 Low| no water, glass and block reflections
 Medium| the main pack
 Ultra| full steps for fog and sky
 
-The build adds a "subpacks" folder to the mcpack and the list to "manifest.json"
+The build adds a "subpacks" folder to the mcpack and the list to "manifest.json".
 
 Settings
 
-Open "lib/settings.h", change a value and build again
+Open "lib/settings.h", change a value and build again.
+
 The main ones:
 
 Setting| What it does
@@ -65,10 +66,13 @@ Setting| What it does
 
 Metal and glossy blocks
 
-A block reflects the sky and clouds when its texture has the material flags in the alpha channel
-"tools/metal_alpha.py" writes them
+A block reflects the sky and clouds when its texture has the material flags in the alpha channel.
 
-python tools/metal_alpha.py in.png out.png iron     # gold, silver, copper, iron or gloss
+"tools/metal_alpha.py" writes them:
+
+python tools/metal_alpha.py in.png out.png iron
+
+"gold", "silver", "copper", "iron" or "gloss" can be used as the material type.
 
 Folders
 
@@ -81,17 +85,18 @@ Folder| Content
 "tools/"| shaderc and helper scripts
 "docs/"| notes
 
-See "docs/how-it-works.md" for how the build works
+See "docs/how-it-works.md" for how the build works.
 
 License
 
 MIT License
+
 Copyright © 2026 Naresh
 
-The shader code in "lib/" and "shaders/" was written new for this project
+The shader code in "lib/" and "shaders/" was written new for this project.
 
-The visual ideas and overall look were inspired by studying different shader packs but no code was copied from them
+The visual ideas and overall look were inspired by studying different shader packs but no code was copied from them.
 
-Everyone can use this source under the MIT License and make their own variant
+Everyone can use this source under the MIT License and make their own variant.
 
-See "LICENSE" and "NOTICE.md" for the full license and project notice
+See "LICENSE" and "NOTICE.md" for the full license and project notice.
