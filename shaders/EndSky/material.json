@@ -1,0 +1,5 @@
+{
+  "uniform_overrides": {
+    "CameraPosition": "BUILTIN_MinecraftCameraPosition"
+  }
+}

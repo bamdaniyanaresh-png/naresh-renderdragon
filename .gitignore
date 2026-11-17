@@ -1,0 +1,6 @@
+build/
+vanilla/*.material.json
+vanilla/*.material.bin
+tools/shaderc
+tools/shaderc.exe
+__pycache__/
