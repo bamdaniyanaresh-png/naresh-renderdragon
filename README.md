@@ -4,6 +4,10 @@ A shader pack for Minecraft Bedrock (RenderDragon) by Naresh with soft clouds, a
 
 This repository has its own layout and its own build tool (`naresh.py`).
 
+## Screenshots
+
+![Shader Preview](docs/preview.png)
+
 ## What you need
 
 - Python 3.11 or newer
