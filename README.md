@@ -12,23 +12,21 @@ This repository has its own layout and its own build tool (`naresh.py`).
 
 - Python 3.11 or newer
 - lazurite: `pip install -r requirements.txt`
-- shaderc, the shader compiler
-  Download: https://github.com/veka0/bgfx-mcbe/releases/tag/binaries
+
+The shader compiler (`shaderc`) and required game materials are downloaded automatically by `setup`.
 
 You do not need to find or download the material `.bin` files manually.
-
-Just run the full build setup command and the required materials will be installed into the `vanilla/` folder automatically.
-
-On Termux copy shaderc to your home folder and run `chmod +x` on it.
 
 ## Build
 
 ```bash
 pip install -r requirements.txt
-python naresh.py setup --shaderc path/to/shaderc --vanilla path/to/game/materials
+python naresh.py setup
 python naresh.py check
 python naresh.py pack -p android
 ```
+
+`setup` is only needed once.
 
 `-p` can be `android`, `ios`, `windows` or `all`. The pack is written to `build/`.
 
