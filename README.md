@@ -20,7 +20,7 @@ You do not need to find or download the material `.bin` files manually.
 ## Build
 
 ```bash
-cd ~/desktop/naresh-renderdragon
+cd ~/Desktop/naresh-renderdragon
 
 pkg update -y
 pkg install python git -y
